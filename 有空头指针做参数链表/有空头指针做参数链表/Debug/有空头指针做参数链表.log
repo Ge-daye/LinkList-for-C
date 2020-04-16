@@ -1,0 +1,7 @@
+﻿  Mymain.c
+C:\Users\葛浩东\Desktop\数据结构\链表\有空头指针做参数链表\有空头指针做参数链表\Mymain.c(11,23): warning C4013: “malloc”未定义；假设外部返回 int
+C:\Users\葛浩东\Desktop\数据结构\链表\有空头指针做参数链表\有空头指针做参数链表\Mymain.c(30,8): warning C4013: “free”未定义；假设外部返回 int
+C:\Users\葛浩东\Desktop\数据结构\链表\有空头指针做参数链表\有空头指针做参数链表\Mymain.c(54,10): warning C4477: “printf”: 格式字符串“%S”需要类型“unsigned short *”的参数，但可变参数 2 拥有了类型“char *”
+C:\Users\葛浩东\Desktop\数据结构\链表\有空头指针做参数链表\有空头指针做参数链表\Mymain.c(54,10): message : 请考虑在格式字符串中使用“%hS”
+C:\Users\葛浩东\Desktop\数据结构\链表\有空头指针做参数链表\有空头指针做参数链表\Mymain.c(54,10): message : 请考虑在格式字符串中使用“%TS”
+  有空头指针做参数链表.vcxproj -> C:\Users\葛浩东\Desktop\数据结构\链表\有空头指针做参数链表\Debug\有空头指针做参数链表.exe
