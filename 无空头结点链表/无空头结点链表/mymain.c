@@ -64,6 +64,7 @@ Node* searchNode(int a)
 	return NULL;
 }
 
+//在任意索引处插入结点
 void InsertNode(int index, int a)
 {
 	if (Head == NULL)
@@ -155,8 +156,19 @@ void  delete(int flag)
 	{
 		if (p->id == flag)
 		{
-
+			pTemp->next = p->next;
+			free(p);
+			p = pTemp->next;
 		}
+		
+		if (p == NULL)//即如果删除的是左后一个元素
+		{
+			End = pTemp;
+			break;
+		}
+        pTemp = pTemp->next;
+		p = p->next;
+
 
 	}
 
@@ -205,10 +217,14 @@ int main()
 	AddNodetail(2);
 	display();
 	int Length = Listlength();
-	printf("链表的长度为%d", Length);
+	printf("链表的长度为%d\n", Length);
 	printf("在第2个位置上插上5\n");
 	InsertNode(1, 5);
 	display();
+	printf("删除id=2的结点\n");
+	delete(2);
+	display();
+	printf("最新的链表尾结点是：%d", End->id);
 
 	return 0;
 }
